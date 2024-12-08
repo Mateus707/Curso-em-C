@@ -7,20 +7,20 @@ void inverterString(char str[]) {
     while (inicio < fim) {
         // Troca os caracteres
         char temp = str[inicio];
-         printf("String original: %c\n", temp);
+        
         str[inicio] = str[fim];
         char letraInicio = str[fim];
-        printf("String letra do fim sendo colocada no inicio: %c \n",letraInicio);
+        
         str[fim] = temp;
         char letraFim = temp;
-        printf("String letra do inicio sendo colocada no fim: %c \n", letraFim);
+        
         
         inicio++;
         fim--;
     }
 }
 int main() {
-    char minhaString[] = "Mateus";
+    char minhaString[] = "GABRIEL E VIADO";
 
     inverterString(minhaString);
     printf("String invertida: %s\n", minhaString);
